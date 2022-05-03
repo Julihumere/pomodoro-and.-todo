@@ -14,6 +14,8 @@ import { useState, useRef, useEffect } from "react";
 /////////////////////
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { Howl, Howler } from "howler";
+
 export default function Pomodoro() {
   const [pausa, setpausa] = useState(true);
   const [mode, setMode] = useState("work");
@@ -84,6 +86,14 @@ export default function Pomodoro() {
     segundosRef.current--;
     setSegundos(segundosRef.current);
   };
+
+  const audio = new Howl({
+    src: ["audio.mp3"],
+  });
+
+  if (segundosRef.current === 3) {
+    audio.play();
+  }
 
   useEffect(() => {
     const cambiarModo = () => {
@@ -262,7 +272,12 @@ export default function Pomodoro() {
         </div>
       </div>
       <div className={stylesWallpaper.wallpaper}>
-        <Image className={stylesWallpaper.stretch} src={fondo} alt="" />
+        <Image
+          layout="fixed"
+          className={stylesWallpaper.stretch}
+          src={fondo}
+          alt=""
+        />
       </div>
     </>
   );

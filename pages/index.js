@@ -59,7 +59,12 @@ export default function Home() {
         </div>
       </main>
       <div className={stylesWallpaper.wallpaper}>
-        <Image className={stylesWallpaper.stretch} src={fondo} alt="" />
+        <Image
+          layout="fixed"
+          className={stylesWallpaper.stretch}
+          src={fondo}
+          alt=""
+        />
       </div>
     </div>
   );

@@ -79,3 +79,83 @@
   font-size: 3rem;
   font-family: Roboto;
 }
+
+@media screen and (max-width: 425px) {
+  .containerTitle {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(70, 196, 252, 1) 100%
+    );
+  }
+  .title {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: midnightblue;
+  }
+  .containerRedes {
+    display: flex;
+    width: 30%;
+    margin-left: 15rem;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    height: 180vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .pomodoro {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../public/fondoPomodoro.jpg");
+    border-radius: 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .pomodoro a {
+    background-color: #fff;
+    width: 21rem;
+    height: 5rem;
+  }
+
+  .todo {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../public/fondoToDo.jpg");
+    border-radius: 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .todo a {
+    background-color: #fff;
+    width: 20rem;
+    height: 5rem;
+  }
+}
