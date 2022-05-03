@@ -27,3 +27,34 @@
     height: 100%;
   }
 }
+@media screen and (max-width: 550px) {
+  .wallpaper {
+    width: 300%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -9999;
+  }
+
+  .stretch {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wallpaper {
+    width: 300%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -9999;
+  }
+
+  .stretch {
+    width: 100%;
+    height: 100%;
+  }
+}
