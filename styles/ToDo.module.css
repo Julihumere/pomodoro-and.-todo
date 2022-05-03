@@ -237,6 +237,77 @@
 .btn_agregar:focus {
   outline: none;
 }
+@media screen and (max-width: 720px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200%;
+    backdrop-filter: blur(15px);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, #46c4fc 100%);
+  }
+  .containerTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(70, 196, 252, 1) 100%
+    );
+  }
+  .title {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: midnightblue;
+  }
+  .containerRedes {
+    display: flex;
+    width: 30%;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container {
+    width: 200%;
+    height: 180vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .form {
+    width: 90%;
+    height: 80vh;
+    margin-left: 2rem;
+  }
+  .headerForm h1 {
+    font-size: 2rem;
+    color: midnightblue;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  .completados {
+    width: 90%;
+    height: 80vh;
+    margin-left: 2rem;
+  }
+
+  .listaCompleto {
+    width: 95%;
+  }
+
+  .list {
+    height: 162.5vh;
+    margin-right: 2rem;
+  }
+  .items {
+    margin-left: 1rem;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .header {
