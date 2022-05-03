@@ -116,7 +116,7 @@ export default function Pomodoro() {
         return cambiarModo();
       }
       reduccionSegundos();
-    }, 100);
+    }, 1000);
     return () => clearInterval(interval);
   }, [time[0]]);
 
