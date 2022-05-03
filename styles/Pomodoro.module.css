@@ -19,6 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1rem;
+  border: 1px solid black;
 }
 
 .containerRedes {
@@ -272,6 +274,12 @@
     font-size: 3rem;
     color: midnightblue;
   }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+  }
   .containerRedes {
     display: flex;
     width: 30%;
@@ -359,6 +367,12 @@
     font-size: 3rem;
     color: midnightblue;
   }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+  }
   .containerRedes {
     display: flex;
     width: 30%;
@@ -445,6 +459,12 @@
     justify-content: center;
     font-size: 3rem;
     color: midnightblue;
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
   }
   .containerRedes {
     display: flex;

@@ -273,7 +273,7 @@ export default function Pomodoro() {
       </div>
       <div className={stylesWallpaper.wallpaper}>
         <Image
-          layout="fixed"
+          layout="fill"
           className={stylesWallpaper.stretch}
           src={fondo}
           alt=""
