@@ -87,9 +87,9 @@ export default function Pomodoro() {
     setSegundos(segundosRef.current);
   };
 
+  Howler.volume(0.1);
   const audio = new Howl({
     src: ["audio.mp3"],
-    volume: 0.5,
   });
 
   if (segundosRef.current === 3) {
