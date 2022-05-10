@@ -91,7 +91,7 @@ export default function Pomodoro() {
     src: ["audio.mp3"],
   });
 
-  if (segundosRef.current === 5) {
+  if (segundosRef.current === 6) {
     audio.play();
   }
 
